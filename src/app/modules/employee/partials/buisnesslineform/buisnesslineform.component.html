@@ -1,0 +1,33 @@
+<div class="pdwrapper">
+    <div>
+        <h6>Buisness Line</h6>
+    </div>
+    <div class="formelem flex-row">
+        <mat-form-field appearance="outline">
+            <mat-label>LOB</mat-label>
+            <mat-select>
+                <mat-option *ngFor="let lob of lobs " [value]="lob">{{lob}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Vertical</mat-label>
+            <mat-select>
+                <mat-option *ngFor="let vertical of verticals " [value]="vertical">{{vertical}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Sub Vertical</mat-label>
+            <mat-select>
+                <mat-option *ngFor="let subvertical of subverticals " [value]="subvertical">{{subvertical}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Channel</mat-label>
+            <mat-select>
+                <mat-option *ngFor="let channel of channels " [value]="channel">{{channel}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+            
+        
+    </div>
+</div>

@@ -1,0 +1,108 @@
+<div class="employeenewwrapper">
+    <div class="optionsarea flex-row">
+        <ul class="flex-row">
+            <li><button mat-raised-button  (click)="openbulkupload()">Bulk Upload</button></li>
+            <li><button mat-raised-button >Export to Excel</button></li>
+          </ul>
+          <mat-form-field appearance="outline" class="matInput">
+            <mat-label>Search By Name or code</mat-label>
+            <input matInput placeholder="Search By Name or code">
+            <mat-icon matSuffix>search</mat-icon>
+          </mat-form-field>
+    </div>
+    <section>
+      <table>
+        <tr>
+          <th>
+            <mat-checkbox class="example-margin"></mat-checkbox>
+          </th>
+          <th>#</th>
+          <th>Name</th>
+          <th>Ecode</th>
+          <th>Designation</th>
+          <th>From Date</th>
+          <th>To Date</th>
+          <th>Relationship Manager</th>
+          <th>RM Ecode</th>
+          <th>
+            <app-tableheader [title]="'LOB'" [options]="['options1','option2','option3']"></app-tableheader>
+          </th>
+          <th>
+            <app-tableheader [title]="'Zone'" [options]="['options1','option2','option3']"></app-tableheader>
+          </th>
+          <th>
+            <app-tableheader [title]="'Main Location'" [options]="['options1','option2','option3']"></app-tableheader>
+          </th>
+          <th>
+            <app-tableheader [title]="'Base Location'" [options]="['options1','option2','option3']"></app-tableheader>
+          </th>
+          <th>
+            <app-tableheader [title]="'Profile'" [options]="['options1','option2','option3']"></app-tableheader>
+          </th>
+          <th>
+            <app-tableheader [title]="'Channel'" [options]="['options1','option2','option3']"></app-tableheader>
+          </th>
+          <th>
+            <app-tableheader [title]="'Vertical'" [options]="['options1','option2','option3']"></app-tableheader>
+          </th>
+          <th>
+            <app-tableheader [title]="'subvertical'" [options]="['options1','option2','option3']"></app-tableheader>
+          </th>
+          <th>
+            <app-tableheader [title]="'Type of Employee'" [options]="['options1','option2','option3']"></app-tableheader>
+          </th>
+          <th>
+            <app-tableheader [title]="'Employee Status'" [options]="['options1','option2','option3']"></app-tableheader>
+          </th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Cost Share</th>
+          <th>% Allocation</th>
+          <th>Cost Center</th>
+          <th>Activate Account</th>
+          <th>Version History</th>
+        </tr>
+         <tr *ngFor="let employee of employees; index as i">
+           <td>
+              <mat-checkbox class="example-margin"></mat-checkbox>
+           </td>
+           <td>{{i+1}}</td>
+           <td><a [href]="['/employee/details/new']" >{{employee.name}}</a></td>
+           <td>{{employee.ecode}}</td>
+           <td>{{employee.designation}}</td>
+           <td>{{employee.from}}</td>
+           <td>{{employee.to}}</td>
+           <td>{{employee.rm}}</td>
+           <td>{{employee.rmcode}}</td>
+           <td>{{employee.lob}}</td>
+           <td>{{employee.zone}}</td>
+           <td>{{employee.mainloc}}</td>
+           <td>{{employee.baseloc}}</td>
+           <td>{{employee.profile}}</td>
+           <td class="channel">
+             <div class="card flex-row" *ngFor="let channel of employee.channels"><span>{{channel}}</span></div>
+           </td>
+           <td>{{employee.vertical}}</td>
+           <td>{{employee.subvertical}}</td>
+           <td>{{employee.typeofemp}}</td>
+           <td>{{employee.empstatus}}</td>
+           <td>{{employee.emailid}}</td>
+           <td>{{employee.phone}}</td>
+           <td>{{employee.costshare}}</td>
+           <td>{{employee.percentageallocation}}</td>
+           <td>{{employee.costcenter}}</td>
+           <td>
+             <mat-icon class="his">check_circle_outline</mat-icon>
+             <mat-icon class="his">highlight_off</mat-icon>
+           </td>
+           <td>
+             <mat-icon class="his" (click)="openversionhistory(employee.versionhistory)">history</mat-icon>
+           </td>
+         </tr>
+      </table>
+    </section>
+    <mat-paginator [length]="100"
+      [pageSize]="10"
+      [pageSizeOptions]="[5, 10, 25, 100]">
+    </mat-paginator>
+</div>

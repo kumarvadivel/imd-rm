@@ -1,0 +1,14 @@
+mat-icon{
+    margin-left: auto;
+    order: 2;
+}
+.bulkupload > div > *{
+}
+.form > * {
+    margin-bottom: 1rem;
+    min-width: 25rem;
+}
+
+button{
+    background: #FFAA00;
+}

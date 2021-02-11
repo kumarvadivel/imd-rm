@@ -1,0 +1,26 @@
+mat-form-field{
+    display: flex;
+    padding: 0 1rem;
+}
+.homewrapper {
+    padding: 1rem;
+    margin-top: .1rem;
+}
+.homewrapper > header,section{
+    padding: .2rem 1rem;
+}
+h3{
+    padding: 0 1rem;
+}
+.inputgroup{
+    display: flex;
+    flex-direction: row;
+   
+}
+ .form{ 
+    background:gainsboro;
+}
+.hierarchy{
+    display: block ;
+    height: 40rem;
+}

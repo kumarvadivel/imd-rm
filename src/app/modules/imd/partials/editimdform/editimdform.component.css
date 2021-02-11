@@ -1,0 +1,37 @@
+.close {
+    margin-left: auto;
+    order: 2;
+}
+.content{
+    margin-top: 1em;
+    padding: 1rem;
+    min-height: 30rem;
+    min-width: 60rem;
+    background: #dcdcdc;
+}
+.listing  {
+    margin-left: 1rem;
+}
+.subcontent{
+    max-width: 45rem;
+    min-height: 25rem;
+    max-height: 42rem;
+    background-color: white;
+    border-radius: 6px;
+    overflow-y: scroll;
+}
+.subcontent, .listing {
+    padding: 1rem;
+}
+.listing {
+    width: fill;
+    background-color: white;
+    border-radius: 6px;
+}
+.subcontent > div {
+    margin-left: auto;
+    order: 2;
+}
+.subcontent > div > button{
+    margin-right: 1rem;
+}

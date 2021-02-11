@@ -1,0 +1,10 @@
+mat-icon{
+    margin-left: auto;
+    order: 2;
+}
+.bulkupload > div > *{
+    margin-top: 2rem;
+}
+.form > * {
+    margin-bottom: 1rem;
+}

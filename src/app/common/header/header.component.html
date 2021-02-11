@@ -1,0 +1,31 @@
+<header class="shadow-md">
+    <i  (click)="opened=!opened" class="fas fa-bars"></i>
+    <div class="info-bar">
+        <ul class="menu-options">
+            <li>
+                <button mat-raised-button>Zing HR</button>
+            </li>
+            <li>
+                <div class="personal">
+                    <span>
+                        Hi,SUJITH
+                    </span>
+                    <span>
+                        Role Name
+                     </span>
+                </div>
+            </li>
+            <li>
+                <img src="https://d2h44aw7l5xdvz.cloudfront.net/assets/logos/digit.svg" alt="logo"/>
+            </li>
+        </ul>
+    </div>
+    </header>
+<mat-sidenav-container>
+    <mat-sidenav-content>
+        <ng-content></ng-content>
+    </mat-sidenav-content>
+    <mat-sidenav #sidenav [(opened)]="opened">
+        <app-sidenav [sidenav]="sidenav"></app-sidenav>
+    </mat-sidenav>
+</mat-sidenav-container>

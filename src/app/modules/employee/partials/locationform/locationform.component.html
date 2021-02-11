@@ -1,0 +1,41 @@
+<div class="pdwrapper">
+    <div>
+        <h6>Location Details</h6>
+    </div>
+    <div class="formelem flex-row">
+        <mat-form-field appearance="outline">
+            <mat-label>Zone</mat-label>
+            <mat-select>
+                <mat-option *ngFor="let zone of zones " [value]="zone">{{zone}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Main Location</mat-label>
+            <mat-select>
+                <mat-option *ngFor="let ml of mls " [value]="ml">{{ml}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Base Location</mat-label>
+            <mat-select>
+                <mat-option *ngFor="let bl of bls " [value]="bl">{{bl}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+            
+        <mat-form-field appearance="outline">
+            <mat-label>Cost Center</mat-label>
+            <mat-select>
+                <mat-option *ngFor="let cc of ccs " [value]="cc">{{cc}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Cost Share</mat-label>
+            <input matInput #input maxlength="10" placeholder="Cost share">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Percentage Allocation</mat-label>
+            <input matInput #input maxlength="10" placeholder="% Allocation">
+        </mat-form-field>
+        
+    </div>
+</div>

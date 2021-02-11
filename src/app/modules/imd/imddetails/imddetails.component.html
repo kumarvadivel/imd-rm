@@ -1,0 +1,363 @@
+<div class="imddetailswrapper">
+    <div class="optionsarea flex-row">
+        <ul class="flex-row">
+            <li><button mat-raised-button  (click)="openbulkupload()">Bulk Upload</button></li>
+            <li><button mat-raised-button  (click)="openchangeam()">Change AM</button></li>
+            <li><button mat-raised-button  (click)= "openeditimd()">Edit IMD details</button></li>
+            <li><button mat-raised-button >Export to Excel</button></li>
+        </ul>
+        <mat-form-field appearance="outline" class="matInput">
+            <mat-label>Search By Name or code</mat-label>
+            <input matInput placeholder="Search By Name or code">
+            <mat-icon matSuffix>search</mat-icon>
+        </mat-form-field>
+    </div>
+    <section>
+        <table  class="mat-elevation-z8" >
+          <tr>
+            <th>
+              <mat-checkbox class="example-margin"></mat-checkbox>
+            </th>
+            <th>#</th>
+            <th>IMD Name</th>
+            <th>IMD Ecode</th>
+            <th>Entry date</th>
+            <th>
+                <mat-form-field appearance="outline">
+                    <mat-label>Account Manager</mat-label>
+                    <mat-select>
+                      <mat-option>option 1</mat-option>
+                      <mat-option>option 2</mat-option>
+                      <mat-option>option 3</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+            </th>
+            <th>
+                <mat-form-field appearance="outline">
+                    <mat-label>Comcha</mat-label>
+                    <mat-select>
+                      <mat-option>option 1</mat-option>
+                      <mat-option>option 2</mat-option>
+                      <mat-option>option 3</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+            </th>
+            <th>
+                <mat-form-field appearance="outline">
+                    <mat-label>Vertical code</mat-label>
+                    <mat-select>
+                      <mat-option>option 1</mat-option>
+                      <mat-option>option 2</mat-option>
+                      <mat-option>option 3</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+            </th>
+            <th>
+                <mat-form-field appearance="outline">
+                    <mat-label>Buisness vertical</mat-label>
+                    <mat-select>
+                      <mat-option>option 1</mat-option>
+                      <mat-option>option 2</mat-option>
+                      <mat-option>option 3</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+            </th>
+            <th>
+              <mat-form-field appearance="outline">
+                <mat-label>IMD Channel</mat-label>
+                <mat-select>
+                  <mat-option>option 1</mat-option>
+                  <mat-option>option 2</mat-option>
+                  <mat-option>option 3</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </th>
+            <th>
+              <mat-form-field appearance="outline">
+                <mat-label>IMD Channel IRDA</mat-label>
+                <mat-select>
+                  <mat-option>option 1</mat-option>
+                  <mat-option>option 2</mat-option>
+                  <mat-option>option 3</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </th>
+            <th>
+              <mat-form-field appearance="outline">
+                <mat-label>Sales Unit</mat-label>
+                <mat-select>
+                  <mat-option>option 1</mat-option>
+                  <mat-option>option 2</mat-option>
+                  <mat-option>option 3</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </th>
+            <th>
+              <mat-form-field appearance="outline">
+                <mat-label>Sales Center</mat-label>
+                <mat-select>
+                  <mat-option>option 1</mat-option>
+                  <mat-option>option 2</mat-option>
+                  <mat-option>option 3</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </th>
+            <th>
+              <mat-form-field appearance="outline">
+                <mat-label>Sales Area</mat-label>
+                <mat-select>
+                  <mat-option>option 1</mat-option>
+                  <mat-option>option 2</mat-option>
+                  <mat-option>option 3</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </th>
+            <th>
+              <mat-form-field appearance="outline">
+                <mat-label>Directorate</mat-label>
+                <mat-select>
+                  <mat-option>option 1</mat-option>
+                  <mat-option>option 2</mat-option>
+                  <mat-option>option 3</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </th>
+            <th>
+              <mat-form-field appearance="outline">
+                <mat-label>Division</mat-label>
+                <mat-select>
+                  <mat-option>option 1</mat-option>
+                  <mat-option>option 2</mat-option>
+                  <mat-option>option 3</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </th>
+            <th>
+              <mat-form-field appearance="outline">
+                <mat-label>Location code</mat-label>
+                <mat-select>
+                  <mat-option>option 1</mat-option>
+                  <mat-option>option 2</mat-option>
+                  <mat-option>option 3</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </th>
+            <th>
+              <mat-form-field appearance="outline">
+                <mat-label>City</mat-label>
+                <mat-select>
+                  <mat-option>option 1</mat-option>
+                  <mat-option>option 2</mat-option>
+                  <mat-option>option 3</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </th>
+            <th>Pincode</th>
+            <th>Pickup Code</th>
+            <th>
+                <mat-form-field appearance="outline">
+                    <mat-label>Pickup city</mat-label>
+                    <mat-select>
+                      <mat-option>option 1</mat-option>
+                      <mat-option>option 2</mat-option>
+                      <mat-option>option 3</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+            </th>
+            <th>Staff UserId</th>
+            <th>PC UserId</th>
+            <th>Float Account Number</th>
+            <th>Webuser Id Status</th>
+            <th>Account Deactivate Date</th>
+            <th>
+                <mat-form-field appearance="outline">
+                    <mat-label>Account Status</mat-label>
+                    <mat-select>
+                      <mat-option>option 1</mat-option>
+                      <mat-option>option 2</mat-option>
+                      <mat-option>option 3</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+            </th>
+            <th>
+                <mat-form-field appearance="outline">
+                    <mat-label>IMD Block reason</mat-label>
+                    <mat-select>
+                      <mat-option>option 1</mat-option>
+                      <mat-option>option 2</mat-option>
+                      <mat-option>option 3</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+            </th>
+            <th>
+                <mat-form-field appearance="outline">
+                    <mat-label>Digit Team</mat-label>
+                    <mat-select>
+                      <mat-option>option 1</mat-option>
+                      <mat-option>option 2</mat-option>
+                      <mat-option>option 3</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+            </th>
+            <th>
+                <mat-form-field appearance="outline">
+                    <mat-label>Digit Zone</mat-label>
+                    <mat-select>
+                      <mat-option>option 1</mat-option>
+                      <mat-option>option 2</mat-option>
+                      <mat-option>option 3</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+            </th>
+            <th>
+                <mat-form-field appearance="outline">
+                    <mat-label>Digit Code Status</mat-label>
+                    <mat-select>
+                      <mat-option>option 1</mat-option>
+                      <mat-option>option 2</mat-option>
+                      <mat-option>option 3</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+            </th>
+            <th>Digit AM Code</th>
+            <th>
+                <mat-form-field appearance="outline">
+                    <mat-label>Digit AM Name</mat-label>
+                    <mat-select>
+                      <mat-option>option 1</mat-option>
+                      <mat-option>option 2</mat-option>
+                      <mat-option>option 3</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+            </th>
+            <th>
+                <mat-form-field appearance="outline">
+                    <mat-label>Digit Channel/Vertical</mat-label>
+                    <mat-select>
+                      <mat-option>option 1</mat-option>
+                      <mat-option>option 2</mat-option>
+                      <mat-option>option 3</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+            </th>
+            <th>
+                <mat-form-field appearance="outline">
+                    <mat-label>Digit Pricing Channel</mat-label>
+                    <mat-select>
+                      <mat-option>option 1</mat-option>
+                      <mat-option>option 2</mat-option>
+                      <mat-option>option 3</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+            </th>
+            <th>Digit RM Code</th>
+            <th>
+                <mat-form-field appearance="outline">
+                    <mat-label>Digit RM</mat-label>
+                    <mat-select>
+                      <mat-option>option 1</mat-option>
+                      <mat-option>option 2</mat-option>
+                      <mat-option>option 3</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+            </th>
+            <th>Digit Vertical Head Code</th>
+            <th>
+                <mat-form-field appearance="outline">
+                    <mat-label>Digit Vertical Head Name</mat-label>
+                    <mat-select>
+                      <mat-option>option 1</mat-option>
+                      <mat-option>option 2</mat-option>
+                      <mat-option>option 3</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+            </th>
+            <th>Digit Location Head Code</th>
+            <th>Digit Location Head Name</th>
+            <th>Digit Regional Head Code</th>
+            <th>
+                <mat-form-field appearance="outline">
+                    <mat-label>Digit Regional Head Name</mat-label>
+                    <mat-select>
+                      <mat-option>option 1</mat-option>
+                      <mat-option>option 2</mat-option>
+                      <mat-option>option 3</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+            </th>
+            <th>Digit Zonal Head Code</th>
+            <th>
+                <mat-form-field appearance="outline">
+                    <mat-label>Digit Zonal Head Name</mat-label>
+                    <mat-select>
+                      <mat-option>option 1</mat-option>
+                      <mat-option>option 2</mat-option>
+                      <mat-option>option 3</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+            </th>
+            <th>From</th>
+            <th>To</th>
+            <th>Version History</th>
+          </tr>
+           <tr *ngFor="let imd of imds; index as i">
+             <td>
+                <mat-checkbox class="example-margin"></mat-checkbox>
+             </td>
+             <td>{{i+1}}</td>
+             <td><a [href]="['/imd/details']">{{imd.imdcode}}</a></td>
+             <td>{{imd.imdname}}</td>
+             <td>{{imd.entrydate}}</td>
+             <td>{{imd.accountmanager}}</td>
+             <td>{{imd.comcha}}</td>
+             <td>{{imd.verticalcode}}</td>
+             <td>{{imd.buisnessvertical}}</td>
+             <td>{{imd.imdchannel}}</td>
+             <td>{{imd.irda}}</td>
+             <td>{{imd.salesunit}}</td>
+             <td>{{imd.salescenter}}</td>
+             <td>{{imd.salesarea}}</td>
+             <td>{{imd.directorate}}</td>
+             <td>{{imd.division}}</td>
+             <td>{{imd.locationcode}}</td>
+             <td>{{imd.city}}</td>
+             <td>{{imd.pincode}}</td>
+             <td>{{imd.pickupcode}}</td>
+             <td>{{imd.pickupcity}}</td>
+             <td>{{imd.staffid}}</td>
+             <td>{{imd.pcid}}</td>
+             <td>{{imd.floatac}}</td>
+             <td>{{imd.webid}}</td>
+             <td>{{imd.deactivatedate}}</td>
+             <td>{{imd.accstatus}}</td>
+             <td>{{imd.block_reason}}</td>
+             <td>{{imd.team}}</td>
+             <td>{{imd.zone}}</td>
+             <td>{{imd.codests}}</td>
+             <td>{{imd.amcode}}</td>
+             <td>{{imd.amname}}</td>
+             <td>{{imd.channel}}</td>
+             <td>{{imd.pricingchannel}}</td>
+             <td>{{imd.rmcode}}</td>
+             <td>{{imd.rmname}}</td>
+             <td>{{imd.vhcode}}</td>
+             <td>{{imd.vhname}}</td>
+             <td>{{imd.lhcode}}</td>
+             <td>{{imd.lhname}}</td>
+             <td>{{imd.rhcode}}</td>
+             <td>{{imd.rhname}}</td>
+             <td>{{imd.zhcode}}</td>
+             <td>{{imd.zhname}}</td>
+             <td>{{imd.from}}</td>
+             <td>{{imd.to}}</td>
+             <td>
+                 <mat-icon class="his" (click)="openversionhistory(imd.versionhistory)" >history</mat-icon>
+             </td>
+           </tr>
+        </table>
+    </section>   
+    <mat-paginator [length]="100"
+      [pageSize]="10"
+      [pageSizeOptions]="[5, 10, 25, 100]">
+    </mat-paginator>
+</div>

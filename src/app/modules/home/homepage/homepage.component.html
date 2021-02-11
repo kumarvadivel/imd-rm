@@ -1,0 +1,36 @@
+<div class="homewrapper">
+    <header>
+        <h3>Sales</h3>
+    </header>
+    <section class="formarea">
+        <div class="inputgroup">
+            <mat-form-field appearance="fill">
+                <mat-label>Select Channel</mat-label>
+                <mat-select>
+                  <mat-option *ngFor="let channel of channels" [value]="channel">
+                    {{channel}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+              <mat-form-field appearance="fill">
+                <mat-label>Select Location</mat-label>
+                <mat-select>
+                  <mat-option *ngFor="let location of locations" [value]="location">
+                    {{location}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+              <mat-form-field appearance="fill">
+                <mat-label>Select Zone</mat-label>
+                <mat-select>
+                  <mat-option *ngFor="let zone of zones" [value]="zone">
+                    {{zone}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+        </div>
+        <div class="hierarchy">
+            <ngx-org-chart [nodes]="nodes" direction="horizontal"></ngx-org-chart>
+        </div>
+    </section>    
+</div>

@@ -1,0 +1,40 @@
+<div class=" flex-col sidenav">
+    <div class="flex-col profile">
+        <img src="https://pbs.twimg.com/profile_images/716487122224439296/HWPluyjs.jpg">
+        <span>John Doe</span>
+        <span>Buisness Head</span>
+        <span>Hierarchy Level:1<mat-icon>info</mat-icon></span>
+    </div>
+    <div class="sidenav-options flex-col">
+        <ul>
+            <li class="flex-row" (click)="redirect()" [routerLink]="['/home']">
+                <mat-icon >home</mat-icon>
+                <span>Home</span>
+            </li>
+            <li class="flex-row" (click)="redirect()" [routerLink]="['/employee']">
+                <mat-icon>badge</mat-icon>
+                <span>Employee accounts</span>
+            </li>
+            <li class="flex-row" (click)="redirect()" [routerLink]="['/imd']">
+                <mat-icon>admin_panel_settings</mat-icon>
+                <span>IMD-accounts</span>
+            </li>
+            <li class="flex-row" (click)="redirect()" [routerLink]="['/mapping']">
+                <mat-icon>alt_route</mat-icon>
+                <span>RM-IMD Mapping</span>
+            </li>
+            <li class="flex-row" (click)="redirect()" [routerLink]="['/requests']">
+                <mat-icon matBadge="3" matBadgeColor="warn">quiz</mat-icon>
+                <span>Requests</span>
+            </li>
+            <li class="flex-row" (click)="redirect()" [routerLink]="['/settarget']">
+                <mat-icon>emoji_events</mat-icon>
+                <span>Set Target</span>
+            </li>
+            <li class="flex-row" (click)="redirect()" [routerLink]="['/settings']">
+                <mat-icon>settings</mat-icon>
+                <span>Settings</span>
+            </li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+.pdwrapper{
+
+}
+.formelem{
+    flex-wrap: wrap;
+}
+mat-form-field{
+     margin-right: 6rem;
+}
+mat-form-field{
+    width: 15rem;
+}
+mat-radio-button{
+    margin-right: 1rem;
+}

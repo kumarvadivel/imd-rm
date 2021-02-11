@@ -1,0 +1,68 @@
+.employeedetailswrapper{
+    padding: 1rem;
+    background: #fafafa;
+    overflow: hidden;
+}
+section{
+    overflow: scroll;
+    overflow-y: hidden;
+}
+table{
+    overflow: scroll;
+    border: none;
+}
+table > * {
+    border: none;
+}
+.optionsarea{
+    padding: 0 1rem;
+    align-items: center;
+}
+.optionsarea > ul >li{
+    margin-right: 1rem;
+}
+mat-form-field{
+    margin-left: auto;
+    order: 3;
+    border-radius: 6px;
+    margin-top: 1em;
+}
+th{
+    background: rgb(241 241 241);
+    padding: 1rem 1.5rem ;
+    white-space: nowrap;
+}
+td{
+    
+    white-space: nowrap;
+    padding: 1.5rem;
+}
+td{
+    display: table-cell;
+    vertical-align: center;
+    white-space: nowrap;
+    background: white;
+}
+table:first-child >th {
+    background-color: lightcoral;
+    box-shadow: -1px 7px 10px -6px rgba(39, 39, 39, 0.603);   
+}
+.channel{
+    display: flex;
+    padding: 2em;
+}
+.card{
+    background: lightblue;
+    align-items: center;
+    margin-left: .5rem;
+}
+.his{
+    color: #FFAA00;
+    
+}
+button{
+    border:1px solid #FFAA00 ;
+}
+button:hover{
+    background: #FFAA00;
+}

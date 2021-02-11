@@ -1,0 +1,21 @@
+<div class="flex-row bulkupload">
+    
+    <mat-icon (click)='close()' cdkFocusInitial>close</mat-icon>
+    
+    <div class="form flex-col">
+        <div>Change AM</div>
+        <div class="flex-col">
+            <mat-form-field appearance="outline">
+                <mat-label>Choose AM Name</mat-label>
+                <mat-select>
+                    <mat-option *ngFor="let option of options " [value]="option">{{option}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>AM Code</mat-label>
+                <input matInput placeholder="Imd name" value="1011045" disabled >
+            </mat-form-field>
+            <button mat-raised-button (click)="close()">Save</button>
+        </div>
+    </div>
+</div>

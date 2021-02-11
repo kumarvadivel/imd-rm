@@ -1,0 +1,64 @@
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
+header{
+    height: 12vh;
+    display: flex;
+    flex-direction: row;
+    padding: 0 2%;
+    box-shadow: -6px 3px 22px -7px rgba(0,0,0,0.75);
+    position: relative;
+    align-items: center;
+}
+.info-bar{
+  margin-left: auto;
+  order: 2;
+}
+.info-bar > ul{
+    margin: 0;
+    align-items: center;
+    padding: 1rem;
+}
+.info-bar > ul > li {
+    padding: 0 1rem;
+} 
+.personal{
+    display: flex;
+    flex-direction: column;
+}
+.menu-options{
+    display: flex;
+    flex-direction: row;
+}
+.menu-options > li {
+    width: fit-content;
+}
+.menu-options >li > img{
+    height: 2rem;
+    width: 4rem;
+}
+.menu{
+    text-align: center;
+}
+
+
+mat-sidenav{
+    width: 300px;
+    position: fixed;
+    
+    
+}
+mat-sidenav-container{
+    height: 100vh;
+    width: 100vw;
+}
+mat-sidenav-content{
+    
+}
+button{
+    padding: .5rem .5rem;
+    background: white;
+    border-radius: 3px;
+    border:1px solid #FFAA00;
+}
+button:hover{
+    background: #FFAA00;
+}

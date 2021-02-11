@@ -1,0 +1,112 @@
+<div class="employeedetailswrapper">
+    <div class="optionsarea flex-row">
+        <ul class="flex-row">
+            <li><button mat-raised-button  (click)="openbulkupload()">Bulk Upload</button></li>
+            <li><button mat-raised-button  (click)="openchangeam()">Change AM</button></li>
+            <li><button mat-raised-button  (click)= "openeditemp()">Edit details</button></li>
+            <li><button mat-raised-button >Export to Excel</button></li>
+        </ul>
+        <mat-form-field appearance="outline" class="matInput">
+            <mat-label>Search By Name or code</mat-label>
+            <input matInput placeholder="Search By Name or code">
+            <mat-icon matSuffix>search</mat-icon>
+        </mat-form-field>
+    </div>
+    <section>
+        <table>
+            <tr>
+                <th>
+                    <mat-checkbox class="example-margin"></mat-checkbox>
+                </th>
+                <th>#</th>
+                <th>IMD Code</th>
+                <th>IMD Name</th>
+                <th>AM Code</th>
+                <th>
+                    <app-tableheader [title]="'AM Name'" [options]="['option1','option 2','option 3']"></app-tableheader>
+                </th>
+                <th>
+                    <app-tableheader [title]="'Location'" [options]="['option1','option 2','option 3']"></app-tableheader>
+                </th>
+                <th>Location code</th>
+                <th>From Date</th>
+                <th>To Date</th>
+                <th>
+                    <app-tableheader [title]="'Partner Basic Detail'" [options]="['option1','option 2','option 3']"></app-tableheader>
+                </th>
+                <th>
+                    <app-tableheader [title]="'Code Name'" [options]="['option1','option 2','option 3']"></app-tableheader>
+                </th>
+                <th>
+                    <app-tableheader [title]="'Digit Lead'" [options]="['option1','option 2','option 3']"></app-tableheader>
+                </th>
+                <th>
+                    <app-tableheader [title]="'RM Name'" [options]="['option1','option 2','option 3']"></app-tableheader>
+                </th>
+                <th>
+                    <app-tableheader [title]="'RM Status'" [options]="['option1','option 2','option 3']"></app-tableheader>
+                </th>
+                <th>
+                    <app-tableheader [title]="'City'" [options]="['option1','option 2','option 3']"></app-tableheader>
+                </th>
+                <th>
+                    <app-tableheader [title]="'City/Team'" [options]="['option1','option 2','option 3']"></app-tableheader>
+                </th>
+                <th>
+                    <app-tableheader [title]="'Type'" [options]="['option1','option 2','option 3']"></app-tableheader>
+                </th>
+                <th>RM Ecode</th>
+                <th>
+                    <app-tableheader [title]="'IMD Status'" [options]="['option1','option 2','option 3']"></app-tableheader>
+                </th>
+                <th>
+                    <app-tableheader [title]="'IMD Master City'" [options]="['option1','option 2','option 3']"></app-tableheader>
+                </th>
+                <th>
+                    <app-tableheader [title]="'Channel'" [options]="['option1','option 2','option 3']"></app-tableheader>
+                </th>
+                <th>
+                    <app-tableheader [title]="'Zone'" [options]="['option1','option 2','option 3']"></app-tableheader>
+                </th>
+                <th>version History</th>
+            </tr>
+            <tr *ngFor="let mapdata of mapdatas; index as i">
+                <td>
+                    <mat-checkbox class="example-margin"></mat-checkbox>
+                </td>
+                <td>{{i+1}}</td>
+                <td>
+                    <a [href]="['/mapping/details']">{{mapdata.imdcode}}</a>
+                </td>
+                <td>{{mapdata.imdname}}</td>
+                <td>{{mapdata.amcode}}</td>
+                <td>{{mapdata.amname}}</td>
+                <td>{{mapdata.location}}</td>
+                <td>{{mapdata.locationcode}}</td>
+                <td>{{mapdata.from}}</td>
+                <td>{{mapdata.to}}</td>
+                <td>{{mapdata.pbd}}</td>
+                <td>{{mapdata.codename}}</td>
+                <td>{{mapdata.digitlead}}</td>
+                <td>{{mapdata.rmname}}</td>
+                <td>{{mapdata.rmsts}}</td>
+                <td>{{mapdata.city}}</td>
+                <td>{{mapdata.team}}</td>
+                <td>{{mapdata.type}}</td>
+                <td>{{mapdata.rmcode}}</td>
+                <td>{{mapdata.imdsts}}</td>
+                <td>{{mapdata.imdmstrcity}}</td>
+                <td class="channel">
+                    <div class="card flex-row" *ngFor="let channel of mapdata.channel"><span>{{channel}}</span></div>
+                </td>
+                <td>{{mapdata.zone}}</td>
+                <td><mat-icon (click)="openversionhistory(mapdata.versionhistory)" class="his">history</mat-icon></td>
+            </tr>
+        </table>
+    </section>
+    
+    <mat-paginator [length]="100"
+      [pageSize]="10"
+      [pageSizeOptions]="[5, 10, 25, 100]">
+    </mat-paginator>
+</div>

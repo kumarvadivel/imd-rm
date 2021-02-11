@@ -1,0 +1,23 @@
+.close {
+    margin-left: auto;
+    order: 2;
+}
+.content{
+    margin-top: 1em;
+    padding: 1rem;
+    min-width: 50rem;
+    min-height: 20rem;
+    background: #dcdcdc;
+}
+.subcontent{
+    padding: 1rem;
+    width: fill;
+    height: fit-content;
+    background-color: white;
+    border-radius: 6px;
+    margin-bottom: 1em;
+    box-shadow: 4px 4px 16px -4px rgba(140,137,140,1);
+}
+.subbox{
+    min-width: 60%;
+}

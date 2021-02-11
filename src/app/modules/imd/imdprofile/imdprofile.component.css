@@ -1,0 +1,22 @@
+.mappingprofilewrapper{
+    padding: 2rem;
+}
+header{
+    padding: 2rem;
+}
+app-imdmappingform > mat-form-field > div > form{
+   margin-left: 10rem !important;
+   background-color: lightsalmon;
+
+}
+.buttons{
+    padding: 2rem;
+    margin-left: auto;
+    order: 2;
+}
+button{
+    margin-right: 1rem;
+}
+.form{
+    padding: 0 1rem;
+}

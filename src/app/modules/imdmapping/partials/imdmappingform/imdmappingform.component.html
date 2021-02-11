@@ -1,0 +1,119 @@
+<div class="imdformwrapper">
+    <form>
+        <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>IMD Name</mat-label>
+            <input matInput placeholder="Imd name" value="John Doe" disabled >
+        </mat-form-field>
+        <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>IMD Code</mat-label>
+            <input matInput placeholder="Imd Code" value="1000103" disabled >
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>AM Code</mat-label>
+            <mat-select>
+                <mat-option *ngFor="let option of options " [value]="option">{{option}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>AM Name</mat-label>
+            <mat-select>
+                <mat-option *ngFor="let option of options " [value]="option">{{option}}</mat-option>
+            </mat-select>
+        </mat-form-field><mat-form-field appearance="outline">
+            <mat-label>Partner Details</mat-label>
+            <mat-select>
+                <mat-option *ngFor="let option of options " [value]="option">{{option}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Code Name</mat-label>
+            <mat-select>
+                <mat-option *ngFor="let option of options " [value]="option">{{option}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Digit Lead</mat-label>
+            <mat-select>
+                <mat-option *ngFor="let option of options " [value]="option">{{option}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>RM Code</mat-label>
+            <mat-select>
+                <mat-option *ngFor="let option of options " [value]="option">{{option}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Choose RM</mat-label>
+            <mat-select>
+                <mat-option *ngFor="let option of options " [value]="option">{{option}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>City</mat-label>
+            <mat-select>
+                <mat-option *ngFor="let option of options " [value]="option">{{option}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>City/Team</mat-label>
+            <mat-select>
+                <mat-option *ngFor="let option of options " [value]="option">{{option}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Location</mat-label>
+            <mat-select>
+                <mat-option *ngFor="let option of options " [value]="option">{{option}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Location Code</mat-label>
+            <mat-select>
+                <mat-option *ngFor="let option of options " [value]="option">{{option}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Choose Type</mat-label>
+            <mat-select>
+                <mat-option *ngFor="let option of options " [value]="option">{{option}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>IMD Status</mat-label>
+            <mat-select>
+                <mat-option *ngFor="let option of options " [value]="option">{{option}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>IMD Master City</mat-label>
+            <mat-select>
+                <mat-option *ngFor="let option of options " [value]="option">{{option}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Choose Channel</mat-label>
+            <mat-select>
+                <mat-option *ngFor="let option of options " [value]="option">{{option}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Choose Zone</mat-label>
+            <mat-select>
+                <mat-option *ngFor="let option of options " [value]="option">{{option}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>From date</mat-label>
+            <input matInput [matDatepicker]="picker">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+        <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>To Date</mat-label>
+            <input matInput [matDatepicker]="picker">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+    </form>
+</div>

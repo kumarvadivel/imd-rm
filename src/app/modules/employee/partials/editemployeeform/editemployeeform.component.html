@@ -1,0 +1,26 @@
+<div class="flex-row editemployee">
+    <div class="close">
+        <mat-icon (click)='close()' cdkFocusInitial>close</mat-icon>
+    </div>
+    <div class="main flex-col">
+        <div class="modalname">
+            <h6>Edit Employee Details</h6>
+        </div>
+        <div class="content flex-row">
+            <div class="subcontent flex-col">
+                <app-personaldetailform></app-personaldetailform>
+                <app-buisnesslineform></app-buisnesslineform>
+                <app-locationform></app-locationform>
+                <div>
+                    <button mat-stroked-button color="primary" (click)="close()">Cancel</button>
+                    <button mat-raised-button color="primary" (click)="close()">Save</button>
+                </div>
+            </div>
+            <div class='listing'>
+                <h6>Editing {{employees.length}} employees</h6>
+                <app-namecard *ngFor="let employee of employees;" [name]="employee"></app-namecard>
+            </div>
+        </div>
+        
+    </div>
+</div>
