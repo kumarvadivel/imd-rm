@@ -9,9 +9,9 @@
         <div class="content flex-row">
             <div class="subcontent flex-col">
                 <app-imdform></app-imdform>
-                <div>
-                    <button mat-stroked-button color="primary" (click)="close()">Cancel</button>
-                    <button mat-raised-button color="primary" (click)="close()">Save</button>
+                <div class="action">
+                    <button mat-stroked-button class="cancel" (click)="close()">Cancel</button>
+                    <button mat-raised-button color="save" (click)="close()">Save</button>
                 </div>
             </div>
             <div class='listing'>

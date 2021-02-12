@@ -1,6 +1,7 @@
 .employeewrapper{
     padding: 2rem;
+    border: 1px solid lightgrey;
 }
-ngx-tab{
-    outline-color: #FFAA00;
+.ngx-tabs{
+    border: 1px solid #e9e9e9;
 }

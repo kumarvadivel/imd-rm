@@ -11,9 +11,7 @@ table{
     overflow: scroll;
     border: none;
 }
-table > * {
-    border: none;
-}
+
 .optionsarea{
     padding: 0 1rem;
     align-items: center;

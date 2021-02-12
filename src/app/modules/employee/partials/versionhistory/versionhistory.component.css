@@ -7,7 +7,10 @@
     padding: 1rem;
     min-width: 50rem;
     min-height: 20rem;
+    max-height: 30rem;
     background: #dcdcdc;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 .subcontent{
     padding: 1rem;
@@ -20,4 +23,8 @@
 }
 .subbox{
     min-width: 60%;
+}
+.versionhistorywrapper{
+    overflow: hidden;
+    max-width: 60rem;
 }

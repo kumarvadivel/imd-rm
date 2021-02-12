@@ -4,14 +4,14 @@
     </div>
     <div class="main flex-col">
         <div class="modalname">
-            <h6>Edit IMD Details</h6>
+            <h6>RM-IMD Mapping Details</h6>
         </div>
         <div class="content flex-row">
             <div class="subcontent flex-col">
                 <app-imdmappingform></app-imdmappingform>
-                <div>
-                    <button mat-stroked-button color="primary" (click)="close()">Cancel</button>
-                    <button mat-raised-button color="primary" (click)="close()">Save</button>
+                <div class="action">
+                    <button mat-stroked-button class="cancel" (click)="close()">Cancel</button>
+                    <button mat-raised-button class="save" (click)="close()">Save</button>
                 </div>
             </div>
             <div class='listing'>

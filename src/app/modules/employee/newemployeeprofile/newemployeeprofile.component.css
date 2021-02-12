@@ -2,7 +2,7 @@
     padding: 2rem;
 }
 header{
-    padding: 2rem;
+    padding: 2rem 4rem;
 }
 app-imdmappingform > mat-form-field > div > form{
    margin-left: 10rem !important;
@@ -16,5 +16,13 @@ button{
     margin-right: 1rem;
 }
 .form{
-    padding: 0 1rem;
+    padding: 0 4rem;
+}
+.buttons > button{
+    width: 6rem;
+    
+    border: 1px solid #ffaa00;
+}
+.save{
+    background: #ffaa00;
 }

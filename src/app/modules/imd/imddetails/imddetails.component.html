@@ -1,4 +1,4 @@
-<div class="imddetailswrapper">
+<div class="imddetailswrapper ngx-tabs">
     <div class="optionsarea flex-row">
         <ul class="flex-row">
             <li><button mat-raised-button  (click)="openbulkupload()">Bulk Upload</button></li>
@@ -12,9 +12,9 @@
             <mat-icon matSuffix>search</mat-icon>
         </mat-form-field>
     </div>
-    <section>
+    <section class="tablearea">
         <table  class="mat-elevation-z8" >
-          <tr>
+          <tr class="tableheadwrapper">
             <th>
               <mat-checkbox class="example-margin"></mat-checkbox>
             </th>
@@ -300,7 +300,7 @@
             <th>To</th>
             <th>Version History</th>
           </tr>
-           <tr *ngFor="let imd of imds; index as i">
+           <tr class="tableheadwrapper" *ngFor="let imd of imds; index as i">
              <td>
                 <mat-checkbox class="example-margin"></mat-checkbox>
              </td>

@@ -10,9 +10,7 @@ section{
 table{
     overflow: scroll;
 }
-table > * {
-    border: none;
-}
+
 .optionsarea{
     padding: 0 1rem;
     align-items: center;

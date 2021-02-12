@@ -8,9 +8,9 @@
         </app-personaldetailform>
         <app-buisnesslineform></app-buisnesslineform>
         <app-locationform></app-locationform>
-        <div class="buttons flex-row">
-            <button mat-stroked-button color="primary">Cancel</button>
-            <button mat-raised-button color="primary">Save</button>
+        <div class="buttons action flex-row">
+            <button mat-stroked-button class="cancel" (click)="redirect()" >Cancel</button>
+            <button mat-raised-button class="save" (click)="redirect()">Save</button>
         </div>
     </div>
 </div>

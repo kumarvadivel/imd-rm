@@ -5,8 +5,8 @@
     <div class="form flex-col">
        <app-imdform></app-imdform>
         <div class="buttons flex-row">
-            <button mat-stroked-button color="primary" >Cancel</button>
-            <button mat-raised-button color="primary" >Save</button>
+            <button mat-stroked-button class="cancel" (click)="redirect()" >Cancel</button>
+            <button mat-raised-button class="save" (click)="redirect()" >Save</button>
         </div>
     </div>
 </div>

@@ -11,9 +11,9 @@
             <mat-icon matSuffix>search</mat-icon>
         </mat-form-field>
     </div>
-    <section>
+    <section class="tablearea">
         <table  class="mat-elevation-z8" >
-          <tr>
+          <tr class="tableheadwrapper">
             <th>
               <mat-checkbox class="example-margin"></mat-checkbox>
             </th>
@@ -62,7 +62,7 @@
             <th>Cost Center</th>
             <th>Version History</th>
           </tr>
-           <tr *ngFor="let employee of employees; index as i">
+           <tr class="tableheadwrapper" *ngFor="let employee of employees; index as i">
              <td>
                 <mat-checkbox class="example-margin"></mat-checkbox>
              </td>
