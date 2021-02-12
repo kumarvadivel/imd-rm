@@ -1,7 +1,16 @@
 mat-form-field{
     padding: 0;
-    margin-left: 1rem ;
+    margin-right: 4rem ;
+    width: 15rem;
 }
 .imdformwrapper{
     overflow-y: visible;
+}
+.subcontent{
+    max-width: 45rem;
+    min-height: 25rem;
+    max-height: 42rem;
+    background-color: white;
+    border-radius: 6px;
+    overflow-y: scroll;
 }

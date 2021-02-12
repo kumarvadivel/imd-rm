@@ -5,7 +5,7 @@
     flex-wrap: wrap;
 }
 .formelem > mat-form-field{
-     margin-right: 6rem;
+     margin-right: 3rem;
 }
 mat-form-field{
     width: 15rem;

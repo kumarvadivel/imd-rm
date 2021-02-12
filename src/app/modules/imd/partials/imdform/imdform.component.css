@@ -1,6 +1,7 @@
 mat-form-field{
     padding: 0;
-    margin-left: 1rem;
+    margin-right: 4rem;
+    width: 15rem;
 }
 .imdformwrapper{
     overflow-y: visible;

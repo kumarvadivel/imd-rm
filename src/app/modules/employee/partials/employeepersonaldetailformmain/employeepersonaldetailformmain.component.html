@@ -17,8 +17,10 @@
     <mat-datepicker #picker></mat-datepicker>
 </mat-form-field>
 <mat-form-field appearance="outline">
-    <mat-label>To Date</mat-label>
-    <input matInput #input maxlength="10" placeholder="Select a end date" disabled>
+    <mat-label>To date</mat-label>
+    <input matInput [matDatepicker]="picker" placeholder="Select a End date" value="123" disabled>
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
 </mat-form-field>
 <mat-form-field appearance="outline">
     <mat-label>Email</mat-label>
