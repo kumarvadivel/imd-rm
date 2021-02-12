@@ -6,23 +6,25 @@
     margin-top: 1em;
     padding: 1rem;
     min-height: 30rem;
-    min-width: 60rem;
+    max-height: 40rem ;
+    max-width: 70rem;
     background: #dcdcdc;
 }
 .listing  {
     margin-left: 1rem;
 }
 .subcontent{
-    min-width: 45rem;
     min-height: 25rem;
+    max-width: 40rem;
     background-color: white;
     border-radius: 6px;
+    overflow-y: scroll;
 }
 .subcontent, .listing {
     padding: 1rem;
 }
 .listing {
-    width: fill;
+    width: 10rem;
     background-color: white;
     border-radius: 6px;
 }
@@ -32,4 +34,7 @@
 }
 .subcontent > div > button{
     margin-right: 1rem;
+}
+.editemployee{
+   overflow: hidden;
 }
