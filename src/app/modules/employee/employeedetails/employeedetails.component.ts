@@ -11,6 +11,7 @@ import { VersionhistoryComponent } from '../partials/versionhistory/versionhisto
   styleUrls: ['./employeedetails.component.css']
 })
 export class EmployeedetailsComponent implements AfterViewInit {  
+  employeecount:number=0;
   employees=[
     {
       name:"john doe",
@@ -36,6 +37,16 @@ export class EmployeedetailsComponent implements AfterViewInit {
       percentageallocation:"N/A",
       costcenter:"N/A",
       versionhistory:[
+        {
+          details:"Employee channel changed from Broker to Agency",
+          datetime:"31st Dec 2020 at 5:15pm",
+          modifiedby:"john doe"
+        },
+        {
+          details:"Employee channel changed from Broker to Agency",
+          datetime:"31st Dec 2020 at 5:15pm",
+          modifiedby:"john doe"
+        },
         {
           details:"Employee channel changed from Broker to Agency",
           datetime:"31st Dec 2020 at 5:15pm",

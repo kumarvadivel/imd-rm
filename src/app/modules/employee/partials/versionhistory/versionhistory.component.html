@@ -1,30 +1,30 @@
-<div class="flex-row">
+<div class=" versionhistorywrapper flex-row">
     <div class="close">
         <mat-icon (click)='close()' cdkFocusInitial>close</mat-icon>
     </div>
-    <div class="modalname">
-        <h6>Version history</h6>
-    </div>
-    
-</div>
-<div class="main flex-col">
-    <div class="content flex-col">
-        <div *ngFor="let info of data" class="subcontent flex-row">
-            <div class=" subbox flex-col">
-                <span><b>Change details</b></span>
-                <span>{{info.details}}</span>
-            </div>
-            <div class=" subbox">
-                <div class="flex-col">
-                    <span><b>Date & Time</b></span>
-                    <span>{{info.datetime}}</span>
+   
+    <div class="main flex-col">
+        <div class="modalname">
+            <h6>Version history</h6>
+        </div>
+        <div class="content flex-col">
+            <div *ngFor="let info of data" class="subcontent flex-row">
+                <div class=" subbox flex-col">
+                    <span><b>Change details</b></span>
+                    <span>{{info.details}}</span>
                 </div>
-                <div class="flex-col">
-                    <span><b>Modified By</b></span>
-                    <span>{{info.modifiedby}}</span>
+                <div class=" subbox">
+                    <div class="flex-col">
+                        <span><b>Date & Time</b></span>
+                        <span>{{info.datetime}}</span>
+                    </div>
+                    <div class="flex-col">
+                        <span><b>Modified By</b></span>
+                        <span>{{info.modifiedby}}</span>
+                    </div>
                 </div>
             </div>
         </div>
+        
     </div>
-    
 </div>

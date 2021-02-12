@@ -22,13 +22,12 @@
                 <mat-option *ngFor="let profile of profiles " [value]="profile">{{profile}}</mat-option>
             </mat-select>
         </mat-form-field>
-            <div>
-                <mat-label><b>Employee status</b></mat-label><br>
-                <mat-radio-group aria-label="Select an option">
-                    <mat-radio-button s value="1">Active</mat-radio-button>
-                    <mat-radio-button value="2">Inactive</mat-radio-button>
-                </mat-radio-group>
-            </div>
+            <mat-form-field appearance="outline">
+                <mat-label>Employee status</mat-label>
+                <mat-select>
+                    <mat-option *ngFor="let profile of profiles " [value]="profile">{{profile}}</mat-option>
+                </mat-select> 
+            </mat-form-field>
             
         
     </div>

@@ -11,9 +11,9 @@
             <mat-icon matSuffix>search</mat-icon>
         </mat-form-field>
     </div>
-    <section>
+    <section class="tablearea">
         <table>
-            <tr>
+            <tr class="tableheadwrapper">
                 <th>
                     <mat-checkbox class="example-margin"></mat-checkbox>
                 </th>
@@ -63,7 +63,7 @@
                 </th>
                 <th>version History</th>
             </tr>
-            <tr *ngFor="let mapdata of mapdatas; index as i">
+            <tr class="tableheadwrapper" *ngFor="let mapdata of mapdatas; index as i">
                 <td>
                     <mat-checkbox class="example-margin"></mat-checkbox>
                 </td>
