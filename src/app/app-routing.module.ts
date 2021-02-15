@@ -8,6 +8,7 @@ import { ImdpageComponent } from './modules/imd/imdpage/imdpage.component';
 import { ImdprofileComponent } from './modules/imd/imdprofile/imdprofile.component';
 import { ImdmappingpageComponent } from './modules/imdmapping/imdmappingpage/imdmappingpage.component';
 import { MappingprofileComponent } from './modules/imdmapping/mappingprofile/mappingprofile.component';
+import { RequestshowComponent } from './modules/requests/requestshow/requestshow.component';
 import { RequestspageComponent } from './modules/requests/requestspage/requestspage.component';
 import { SettargetpageComponent } from './modules/settarget/settargetpage/settargetpage.component';
 import { SettingpageComponent } from './modules/settings/settingpage/settingpage.component';
@@ -15,7 +16,7 @@ import { SettingpageComponent } from './modules/settings/settingpage/settingpage
 const routes: Routes = [
   {
     path:'',
-    component:HomepageComponent,
+    component:RequestspageComponent,
   },
   {
     path:'employee',
@@ -47,6 +48,10 @@ const routes: Routes = [
   {
     path:"requests",
     component:RequestspageComponent,
+  },
+  {
+    path:"requests/show",
+    component:RequestshowComponent,
   },
   {
     path:"settarget",

@@ -1,0 +1,13 @@
+<mat-card class="cardwrapper ">
+    <div class="inner flex-row">
+        <div class=" info flex-col">
+            <span><b>Request By:</b>{{request.name}}</span>
+            <span><b>Role:</b>{{request.role}}</span>
+            <span><b>Date:</b>{{request.date_time}}</span>
+        </div>
+        <div class="flex-col buttongrp">
+            <button mat-raised-button (click)="viewrequest(request)">View Request</button>
+        </div>
+    </div>
+    
+</mat-card>

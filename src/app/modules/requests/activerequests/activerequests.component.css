@@ -1,0 +1,16 @@
+.activereqwrapper{
+    padding: 1rem;
+}
+.filterarea{
+    padding: 0 1rem;
+    align-items: center;
+}
+mat-form-field{
+    margin-left: auto;
+    order: 2;
+    margin-top: 1em;
+}
+.requestarea{
+    padding: 1rem 1rem;
+    background: lightgrey;
+}

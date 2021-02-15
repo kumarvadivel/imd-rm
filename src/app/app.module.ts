@@ -20,6 +20,7 @@ import { ImdModule } from './modules/imd/imd.module';
 import { NamecardComponent } from './common/namecard/namecard.component';
 import { SharedModule } from './common/shared.module';
 import { ImdmappingModule } from './modules/imdmapping/imdmapping.module';
+import { RequestsModule } from './modules/requests/requests.module';
 
 
 @NgModule({
@@ -40,6 +41,7 @@ import { ImdmappingModule } from './modules/imdmapping/imdmapping.module';
     EmployeeModule,
     ImdModule,
     ImdmappingModule,
+    RequestsModule,
     NgxTabsModule,
     MatTabsModule,
     MatBadgeModule,

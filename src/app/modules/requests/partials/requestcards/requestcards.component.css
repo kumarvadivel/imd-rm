@@ -1,0 +1,24 @@
+mat-card{
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+}
+.buttongrp{
+    margin-left: auto;
+    order: 2;
+    margin-right: 4rem;
+    align-items: center;
+}
+
+button{
+    background:#ffaa00;
+}
+
+.inner{
+ align-items: center;
+}
+.inner > div{
+    margin-right: 4rem;
+}
+.info{
+    margin-left: 2rem;
+}
