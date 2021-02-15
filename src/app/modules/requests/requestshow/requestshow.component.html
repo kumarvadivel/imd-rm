@@ -1,0 +1,26 @@
+<div class="reqshwrapper">
+    <div class="infoar flex-col">
+        <span><b>Request by:</b>{{ request.name }}</span>
+        <span><b>Role:</b>{{request.role}}</span>
+    </div>
+    <div>
+        <ngx-tabs >
+            <ngx-tab [active]="true" name="RM">
+                <div class="tablayout">
+                    <app-requestrmd class="ngx-tabsk" *ngFor="let rm of request.rms" [rm]="rm"></app-requestrmd>
+                    
+                </div>
+                
+            </ngx-tab>
+            <ngx-tab  name="IMD">
+                <div class="tablayout">
+                    <app-requestrmd class="ngx-tabsk" *ngFor="let rm of request.imds" [rm]="rm"></app-requestrmd>
+                </div>
+                
+            </ngx-tab>
+
+        </ngx-tabs>
+        
+        
+    </div>
+</div>

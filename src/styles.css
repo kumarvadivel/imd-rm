@@ -46,3 +46,33 @@ th{
 .cancel{
     border: 1px solid #ffaa00;
 }
+.alc{
+    align-items: center;
+}
+th{
+    background: rgb(241 241 241);
+    padding: 1rem 1.5rem ;
+    white-space: nowrap;
+}
+td{
+    width: fit-content;
+    align-items: center;
+    white-space: nowrap;
+    padding: 1.5rem;
+}
+td{
+    display: table-cell;
+    vertical-align: center;
+    white-space: nowrap;
+    background: white;
+}
+table{
+    width: fill;
+}
+tr{
+    border:1px solid lightgray;
+}
+mat-expansion-panel-header{
+    min-height: 7rem;
+    max-height: 7rem ;
+}

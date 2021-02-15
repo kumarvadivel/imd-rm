@@ -1,0 +1,21 @@
+<div class="requesttablewrapper">
+    <table>
+        <tr>
+            <th>#</th>
+            <th *ngFor="let field of fields">{{field}}</th> 
+            <th>Action</th>
+        </tr>
+        <tr *ngFor="let data of tabledata; index as i">
+            <td>{{i+1}}</td>
+            <td>{{data.field1}}</td>
+            <td>{{data.field2}}</td>
+            <td>{{data.field3}}</td>
+            <td>{{data.field4}}</td>
+            <td>{{data.field5}}</td>
+            <td>
+                <button mat-raised-button class="save">Approve</button>
+                <button mat-raised-button class="cancel">Reject</button>
+            </td>
+        </tr>
+    </table>
+</div>

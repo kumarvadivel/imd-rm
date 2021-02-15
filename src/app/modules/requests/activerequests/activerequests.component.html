@@ -1,0 +1,13 @@
+<div class="activereqwrapper">
+    <div class="filterarea flex-row">
+        <app-tableheader [title]="'Filter By'" [options]="['option1','option 2','option 3']"></app-tableheader>
+        <mat-form-field appearance="outline" class="matInput">
+            <mat-label>Search Requests</mat-label>
+            <input matInput placeholder="Search By Requests ">
+            <mat-icon matSuffix>search</mat-icon>
+        </mat-form-field>
+    </div>
+    <div class="requestarea">
+        <app-requestcards *ngFor='let request of requests' [request]="request"></app-requestcards>
+    </div>
+</div>

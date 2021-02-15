@@ -1,0 +1,19 @@
+<div class="rmdwrap">
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <div class="flex-col alc">
+          <span>{{rm.req_type}}</span>
+          <span><b>Requests Pending:</b>{{rm.data.length}}</span>
+        </div>
+      </mat-panel-title>
+      <mat-panel-description class="flex-col alc">
+        {{rm.date_time}}
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <div>
+      <app-requesttable [fields]="rm.fields" [tabledata]="rm.data"></app-requesttable>
+    </div>
+  </mat-expansion-panel>
+</div>
+

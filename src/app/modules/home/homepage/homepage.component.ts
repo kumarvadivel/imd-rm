@@ -9,7 +9,7 @@ export class HomepageComponent implements OnInit {
 
   channels=["Retail","Vehicle","Insurance"];
   locations=["bangalore","Delhi","Mumbai"];
-  zones=["North","East","South","West"];
+  categories=["Zone","Channel"];
 
   nodes: any = [
     {
