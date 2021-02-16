@@ -1,0 +1,24 @@
+.formwrapper{
+    padding: 2rem;
+}
+.targetf{
+    flex-wrap: wrap;
+}
+mat-form-field{
+    margin-right: 5.2rem;
+    width: 15rem;
+}
+.formwrapper > div{
+    display: flex;
+    flex-direction: row;
+
+
+}
+.formwrapper >div > div{
+    margin-left: auto;
+    order: 2;
+    margin-right: 4rem;
+}
+.formwrapper > div >div > button{
+    margin-right: 1rem;
+}

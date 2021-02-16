@@ -1,0 +1,12 @@
+.targetwrapper{
+    padding:1rem 2rem;
+    overflow: hidden;
+}
+
+.optionarea{
+    padding: 1rem;
+}
+.optionarea > button{
+    margin-left: auto;
+    order: 2;
+}

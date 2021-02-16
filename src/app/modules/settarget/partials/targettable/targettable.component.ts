@@ -1,0 +1,134 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-targettable',
+  templateUrl: './targettable.component.html',
+  styleUrls: ['./targettable.component.css']
+})
+export class TargettableComponent implements OnInit {
+
+  targets=[
+    {
+      targetmonth:"January",
+      location:"Mumbai",
+      channel:"Retail",
+      lob:"insurance",
+      lobm:"godigit",
+      nb:"125000",
+      rollover:"85000",
+      renewal:40000,
+      ltp:15000,
+      allocated:35678,
+      assigned:365433
+    },
+    {
+      targetmonth:"January",
+      location:"Mumbai",
+      channel:"Retail",
+      lob:"insurance",
+      lobm:"godigit",
+      nb:"125000",
+      rollover:"85000",
+      renewal:40000,
+      ltp:15000,
+      allocated:35678,
+      assigned:365433
+    },
+    {
+      targetmonth:"January",
+      location:"Mumbai",
+      channel:"Retail",
+      lob:"insurance",
+      lobm:"godigit",
+      nb:"125000",
+      rollover:"85000",
+      renewal:40000,
+      ltp:15000,
+      allocated:35678,
+      assigned:365433
+    },
+    {
+      targetmonth:"January",
+      location:"Mumbai",
+      channel:"Retail",
+      lob:"insurance",
+      lobm:"godigit",
+      nb:"125000",
+      rollover:"85000",
+      renewal:40000,
+      ltp:15000,
+      allocated:35678,
+      assigned:365433
+    },
+    {
+      targetmonth:"January",
+      location:"Mumbai",
+      channel:"Retail",
+      lob:"insurance",
+      lobm:"godigit",
+      nb:"125000",
+      rollover:"85000",
+      renewal:40000,
+      ltp:15000,
+      allocated:35678,
+      assigned:365433
+    },
+    {
+      targetmonth:"January",
+      location:"Mumbai",
+      channel:"Retail",
+      lob:"insurance",
+      lobm:"godigit",
+      nb:"125000",
+      rollover:"85000",
+      renewal:40000,
+      ltp:15000,
+      allocated:35678,
+      assigned:365433
+    },
+    {
+      targetmonth:"January",
+      location:"Mumbai",
+      channel:"Retail",
+      lob:"insurance",
+      lobm:"godigit",
+      nb:"125000",
+      rollover:"85000",
+      renewal:40000,
+      ltp:15000,
+      allocated:35678,
+      assigned:365433
+    },
+    {
+      targetmonth:"January",
+      location:"Mumbai",
+      channel:"Retail",
+      lob:"insurance",
+      lobm:"godigit",
+      nb:"125000",
+      rollover:"85000",
+      renewal:40000,
+      ltp:15000,
+      allocated:35678,
+      assigned:365433
+    },
+    {
+      targetmonth:"January",
+      location:"Mumbai",
+      channel:"Retail",
+      lob:"insurance",
+      lobm:"godigit",
+      nb:"125000",
+      rollover:"85000",
+      renewal:40000,
+      ltp:15000,
+      allocated:35678,
+      assigned:365433
+    },
+  ]
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+}

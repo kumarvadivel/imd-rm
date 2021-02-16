@@ -1,1 +1,23 @@
-<p>settargetpage works!</p>
+<div class="targetwrapper">
+    <div class="optionarea flex-row alc">
+        <mat-form-field appearance="outline">
+            <mat-label>Enter Employee Name or code</mat-label>
+            <mat-select>
+              <mat-option>option1</mat-option>
+              <mat-option>option2</mat-option>
+              <mat-option>option3</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <button mat-raised-button class="save" (click)="bulkupload()">Bulk Upload</button>
+    </div>
+    <div class="tabs">
+        <ngx-tabs class="ngx-tabs">
+            <ngx-tab  name="Form">
+                <app-targetform></app-targetform>
+            </ngx-tab>
+            <ngx-tab [active]="true" name="Target History">
+                <app-targethistory></app-targethistory>
+            </ngx-tab>
+        </ngx-tabs>
+    </div>
+</div>

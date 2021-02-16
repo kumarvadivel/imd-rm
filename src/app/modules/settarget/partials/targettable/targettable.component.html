@@ -1,0 +1,32 @@
+<div class="tablewrapper">
+    <table>
+        <tr>
+            <th>#</th>
+            <th><app-tableheader [title]="'Target Month'" [options]="['options1','option2','option3']"></app-tableheader></th>
+            <th><app-tableheader [title]="'Location'" [options]="['options1','option2','option3']"></app-tableheader></th>
+            <th><app-tableheader [title]="'Channel'" [options]="['options1','option2','option3']"></app-tableheader></th>
+            <th><app-tableheader [title]="'LOB'" [options]="['options1','option2','option3']"></app-tableheader></th>
+            <th><app-tableheader [title]="'LOB/Make Model'" [options]="['options1','option2','option3']"></app-tableheader></th>
+            <th>NB</th>
+            <th>Roll Over</th>
+            <th>Renewal</th>
+            <th>LTP</th>
+            <th>Total Allocated</th>
+            <th>Total Assigned</th>
+        </tr>
+        <tr *ngFor="let target of targets; index as i">
+            <td>{{i+1}}</td>
+            <td>{{target.targetmonth}}</td>
+            <td>{{target.location}}</td>
+            <td>{{target.channel}}</td>
+            <td>{{target.lob}}</td>
+            <td>{{target.lobm}}</td>
+            <td>{{target.nb}}</td>
+            <td>{{target.rollover}}</td>
+            <td>{{target.renewal}}</td>
+            <td>{{target.ltp}}</td>
+            <td>{{target.allocated}}</td>
+            <td>{{target.assigned}}</td>
+        </tr>
+    </table>
+</div>
