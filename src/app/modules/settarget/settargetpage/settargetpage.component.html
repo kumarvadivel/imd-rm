@@ -12,10 +12,10 @@
     </div>
     <div class="tabs">
         <ngx-tabs class="ngx-tabs">
-            <ngx-tab  name="Form">
+            <ngx-tab [active]="true"  name="Form">
                 <app-targetform></app-targetform>
             </ngx-tab>
-            <ngx-tab [active]="true" name="Target History">
+            <ngx-tab  name="Target History">
                 <app-targethistory></app-targethistory>
             </ngx-tab>
         </ngx-tabs>
