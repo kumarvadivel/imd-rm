@@ -443,7 +443,11 @@ export class EmployeedetailsComponent implements AfterViewInit {
     
   }
   openbulkupload(){
-    const dialogRef = this.dialog.open(BulkuploadComponent);
+    const dialogRef = this.dialog.open(BulkuploadComponent,{
+      data:{
+        title:"Bulk Upload Employee Data"
+      }
+    });
   }
   openeditemp(){
     const dialogRef = this.dialog.open(EditemployeeformComponent);

@@ -1,0 +1,98 @@
+<div class="formwrapper">
+    <form class="flex-row targetf">
+        <mat-form-field appearance="outline">
+            <mat-label>Zone</mat-label>
+            <input matInput #input maxlength="10" placeholder="Enter Zone" value="North 1" disabled>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Location</mat-label>
+            <input matInput #input maxlength="10" placeholder="Enter Location" value="Mumbai" disabled>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Location Head</mat-label>
+            <input matInput #input maxlength="10" placeholder="Enter Location Head" value="Sujith" disabled>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Channel</mat-label>
+            <input matInput #input maxlength="10" placeholder="Enter Channel" value="Retail" disabled>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Channel Head</mat-label>
+            <input matInput #input maxlength="10" placeholder="Enter Channel Head" value="John" disabled>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Line Of Buisness</mat-label>
+            <mat-select>
+                <mat-option *ngFor="let option of options " [value]="option">{{option}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Make/Model</mat-label>
+            <mat-select>
+                <mat-option *ngFor="let option of options " [value]="option">{{option}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>RM Name</mat-label>
+            <input matInput #input maxlength="10" placeholder="Enter RM Name" value="smith" disabled>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>RM Ecode</mat-label>
+            <input matInput #input maxlength="10" placeholder="Enter RM Code" value="10110" disabled>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>IMD Code</mat-label>
+            <input matInput #input maxlength="10" placeholder="Enter IMD code" value="54325" disabled>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>IMD Name</mat-label>
+            <input matInput #input maxlength="10" placeholder="Enter IMD Name" value="chandra sekhar" disabled>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>From date</mat-label>
+            <input matInput [matDatepicker]="picker" placeholder="Select a Start date" value="123" disabled>
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>To date</mat-label>
+            <input matInput [matDatepicker]="tpicker" placeholder="Select a End date" value="123" disabled>
+            <mat-datepicker-toggle matSuffix [for]="tpicker"></mat-datepicker-toggle>
+            <mat-datepicker #tpicker></mat-datepicker>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>NB</mat-label>
+            <input matInput #input maxlength="10" placeholder="Enter IMD Name" value="chandra sekhar" disabled>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Roll Over</mat-label>
+            <input matInput #input maxlength="10" placeholder="Enter IMD Name" value="chandra sekhar" disabled>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Renewal</mat-label>
+            <input matInput #input maxlength="10" placeholder="Enter IMD Name" value="chandra sekhar" disabled>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>LTP</mat-label>
+            <input matInput #input maxlength="10" placeholder="Enter IMD Name" value="chandra sekhar" disabled>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Total Allocated</mat-label>
+            <input matInput #input maxlength="10" placeholder="Enter IMD Name" value="chandra sekhar" disabled>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Total Assigned</mat-label>
+            <input matInput #input maxlength="10" placeholder="Enter IMD Name" value="chandra sekhar" disabled>
+        </mat-form-field>
+
+    </form>
+    <div>
+        <div>
+            <button mat-raised-button class="save">save</button>
+            <button mat-stroked-button class="cancel">cancel</button>
+        </div>
+        
+    </div>
+</div>

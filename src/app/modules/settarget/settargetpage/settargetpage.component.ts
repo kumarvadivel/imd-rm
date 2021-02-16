@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { BulkuploadComponent } from '../../employee/partials/bulkupload/bulkupload.component';
 
 @Component({
   selector: 'app-settargetpage',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SettargetpageComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
   }
 
+  bulkupload(){
+    this.dialog.open(BulkuploadComponent,{
+      data:{
+        title:"Bulk Upload Target Data"
+      }
+    })
+  }
 }

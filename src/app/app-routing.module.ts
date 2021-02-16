@@ -16,7 +16,7 @@ import { SettingpageComponent } from './modules/settings/settingpage/settingpage
 const routes: Routes = [
   {
     path:'',
-    component:RequestspageComponent,
+    component:HomepageComponent,
   },
   {
     path:'employee',
