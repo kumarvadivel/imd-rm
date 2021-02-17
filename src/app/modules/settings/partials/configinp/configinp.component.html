@@ -1,0 +1,14 @@
+<div class="flex-row alc inp">
+    <mat-label class="mt label">{{field.field}}</mat-label>
+    <mat-form-field appearance="outline">
+        <mat-label>{{field.field}}</mat-label>
+        <mat-select>
+            <mat-option *ngFor="let options of field.opt" [value]="options">
+            {{options}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+    <div class="mt">
+        <mat-icon (click)="opendialog()">add_circle</mat-icon>
+    </div>
+</div>

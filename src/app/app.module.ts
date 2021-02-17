@@ -22,6 +22,7 @@ import { SharedModule } from './common/shared.module';
 import { ImdmappingModule } from './modules/imdmapping/imdmapping.module';
 import { RequestsModule } from './modules/requests/requests.module';
 import { SettargetModule } from './modules/settarget/settarget.module';
+import { SettingsModule } from './modules/settings/settings.module';
 
 
 @NgModule({
@@ -44,6 +45,7 @@ import { SettargetModule } from './modules/settarget/settarget.module';
     ImdmappingModule,
     RequestsModule,
     SettargetModule,
+    SettingsModule,
     NgxTabsModule,
     MatTabsModule,
     MatBadgeModule,
