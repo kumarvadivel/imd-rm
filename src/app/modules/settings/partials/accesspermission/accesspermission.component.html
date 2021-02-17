@@ -1,0 +1,100 @@
+<div class="accperwrapper">
+    <table>
+        <tr>
+            <th>Access Type</th>
+            <th>Employee Data</th>
+            <th>New Employee Data</th>
+            <th>IMD Master Data</th>
+            <th>IMD Mapped Data</th>
+            <th>Unallocated IMD</th>
+            <th>Requests</th>
+            <th>Scorecard</th>
+            <th>Set Target</th>
+            <th>Settings</th>
+        </tr>
+        <tr *ngFor="let access of accesses">
+            <td><b>{{access.access_type}}</b></td>
+            <td>
+                <mat-form-field appearance="outline">
+                    <mat-select [(value)]="access.emp_data.val">
+                      <mat-option *ngFor="let opt of access.emp_data.opt" [value]="opt">
+                        {{opt}}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+            </td>
+            <td>
+                <mat-form-field appearance="outline">
+                    <mat-select [(value)]="access.nemp_data.val">
+                      <mat-option *ngFor="let opt of access.nemp_data.opt" [value]="opt">
+                        {{opt}}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+            </td>
+            <td>
+                <mat-form-field appearance="outline">
+                    <mat-select [(value)]="access.imdm_data.val">
+                      <mat-option *ngFor="let opt of access.imdm_data.opt" [value]="opt">
+                        {{opt}}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+            </td>
+            <td>
+                <mat-form-field appearance="outline">
+                    <mat-select [(value)]="access.imdmap_data.val">
+                      <mat-option *ngFor="let opt of access.imdmap_data.opt" [value]="opt">
+                        {{opt}}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+            </td>
+            <td>
+                <mat-form-field appearance="outline">
+                    <mat-select [(value)]="access.unallocimd_data.val">
+                      <mat-option *ngFor="let opt of access.unallocimd_data.opt" [value]="opt">
+                        {{opt}}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+            </td>
+            <td>
+                <mat-form-field appearance="outline">
+                    <mat-select [(value)]="access.request_data.val">
+                      <mat-option *ngFor="let opt of access.request_data.opt" [value]="opt">
+                        {{opt}}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+            </td>
+            <td>
+                <mat-form-field appearance="outline">
+                    <mat-select [(value)]="access.scorecard_data.val">
+                      <mat-option *ngFor="let opt of access.scorecard_data.opt" [value]="opt">
+                        {{opt}}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+            </td>
+            <td>
+                <mat-form-field appearance="outline">
+                    <mat-select [(value)]="access.settarget_data.val">
+                      <mat-option *ngFor="let opt of access.settarget_data.opt" [value]="opt">
+                        {{opt}}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+            </td>
+            <td>
+                <mat-form-field appearance="outline">
+                    <mat-select [(value)]="access.settings_data.val">
+                      <mat-option *ngFor="let opt of access.settings_data.opt" [value]="opt">
+                        {{opt}}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+            </td>
+        </tr>
+    </table>
+</div>

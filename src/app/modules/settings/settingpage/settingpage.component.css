@@ -1,0 +1,20 @@
+.settingswrapper{
+    padding: 2rem 1rem;
+}
+.optionarea{
+    height:41rem;
+    background: white;
+    max-width: 20rem;
+    width: fit-content;
+    filter: drop-shadow(10px 0px 4px lightgray);
+    border-radius: 6px;
+    min-width: 19rem;
+}
+.contentarea{
+    padding: 1rem;
+    padding-top: 0;
+    width: fit-content;
+    height: fit-content;
+    overflow-x: scroll;
+    overflow-y: scroll;
+}

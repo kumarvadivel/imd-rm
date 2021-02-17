@@ -1,1 +1,13 @@
-<p>settingpage works!</p>
+<div class="settingswrapper flex-row">
+    <div class="optionarea">
+        <app-settingsmenu (newItemEvent)="state($event)"></app-settingsmenu>
+    </div>
+    <div class="contentarea">
+        <div *ngIf="currentstate=='Configuration'">
+            <app-configuration></app-configuration>
+        </div>
+        <div *ngIf="currentstate=='Acess Permission'">
+            <app-accesspermission></app-accesspermission>
+        </div>
+    </div>
+</div>

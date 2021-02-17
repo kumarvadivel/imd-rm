@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./settingpage.component.css']
 })
 export class SettingpageComponent implements OnInit {
-
+  currentstate="Configuration";
   constructor() { }
 
   ngOnInit(): void {
   }
-
+  state(newstate){
+    this.currentstate=newstate
+    console.log(this.currentstate)
+  }
 }

@@ -1,0 +1,14 @@
+.inp{
+    padding: 1rem 2rem;
+}
+.inp > * {
+    padding:0 1rem;
+    
+}
+
+.mt{
+    margin-top: -24px;
+}
+.label{
+    min-width: 9rem;
+}
