@@ -1,3 +1,4 @@
 .columnwrap{
-    max-width: 66rem;
+    min-width: 64rem;
+    min-height: 40rem;
 }
