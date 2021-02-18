@@ -8,11 +8,16 @@ import { MatDialogRef } from '@angular/material/dialog';
 })
 export class ConfigoptionComponent implements OnInit {
 
+  value=''
   constructor( public dialogref:MatDialogRef<ConfigoptionComponent>) { }
 
   ngOnInit(): void {
   }
   close(){
     this.dialogref.close()
+  }
+  addoption(data){
+    this.dialogref.close(data)
+    
   }
 }
