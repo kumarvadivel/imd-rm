@@ -14,6 +14,12 @@ export class ConfiginpComponent implements OnInit {
   ngOnInit(): void {
   }
   opendialog(){
-    this.dialog.open(ConfigoptionComponent)
+    let dialogref=this.dialog.open(ConfigoptionComponent)
+    dialogref.afterClosed().subscribe(data=>{
+      this.field.opt.push(data)
+      console.log(this.field.opt);
+      
+    })
   }
+  
 }

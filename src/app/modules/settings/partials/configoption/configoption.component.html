@@ -7,9 +7,9 @@
         <div class=" flex-col">
             <mat-form-field appearance="outline">
                 <mat-label>Enter Option Name</mat-label>
-                <input matInput placeholder="Enter a new option" value="">
+                <input matInput placeholder="Enter a new option" #option>
             </mat-form-field>
-            <button mat-raised-button class="save" (click)="close()">Save</button>
+            <button mat-raised-button class="save" (click)="addoption(option.value)">Save</button>
         </div>
     </div>
     <div>
