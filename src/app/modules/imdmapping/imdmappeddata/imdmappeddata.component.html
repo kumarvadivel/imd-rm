@@ -2,8 +2,10 @@
     <div class="optionsarea flex-row">
         <ul class="flex-row">
             <li><button mat-raised-button  (click)="openbulkupload()">Bulk Upload</button></li>
-            <li><button mat-raised-button  (click)="openchangeam()">Change AM</button></li>
-            <li><button mat-raised-button  (click)= "openeditemp()">Edit details</button></li>
+            <li><button mat-raised-button *ngIf="imdmapcount >= 2 || maincheck._checked" (click)="openchangeam()" >Change AM</button></li>
+            <li><button mat-raised-button *ngIf="imdmapcount < 2 && !maincheck._checked" (click)="openchangeam()" disabled>Change AM</button></li>
+            <li><button mat-raised-button *ngIf="imdmapcount >= 2 || maincheck._checked" (click)= "openeditemp()">Edit details</button></li>
+            <li><button mat-raised-button *ngIf="imdmapcount < 2 && !maincheck._checked" (click)= "openeditemp()" disabled>Edit details</button></li>
             <li><button mat-raised-button >Export to Excel</button></li>
         </ul>
         <mat-form-field appearance="outline" class="matInput">
@@ -16,7 +18,7 @@
         <table>
             <tr class="tableheadwrapper">
                 <th>
-                    <mat-checkbox class="example-margin"></mat-checkbox>
+                    <mat-checkbox class="example-margin" #maincheck ></mat-checkbox>
                 </th>
                 <th>#</th>
                 <th>IMD Code</th>
@@ -72,7 +74,7 @@
             </tr>
             <tr class="tableheadwrapper" *ngFor="let mapdata of mapdatas; index as i">
                 <td>
-                    <mat-checkbox class="example-margin"></mat-checkbox>
+                    <mat-checkbox class="example-margin" #check (click)="change(check)" [checked]="maincheck._checked"></mat-checkbox>
                 </td>
                 <td>{{i+1}}</td>
                 <td>

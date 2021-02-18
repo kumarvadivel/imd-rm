@@ -2,7 +2,8 @@
     <div class="optionsarea flex-row">
         <ul class="flex-row">
             <li><button mat-raised-button  (click)="openbulkupload()">Bulk Upload</button></li>
-            <li><button mat-raised-button  (click)= "openeditemp()">Edit details</button></li>
+            <li><button mat-raised-button *ngIf="unallocatedimdcount < 2 && !maincheck._checked" (click)= "openeditemp()" disabled>Edit details</button></li>
+            <li><button mat-raised-button  *ngIf="unallocatedimdcount >= 2 || maincheck._checked " (click)= "openeditemp()">Edit details</button></li>
             <li><button mat-raised-button >Export to Excel</button></li>
         </ul>
         <mat-form-field appearance="outline" class="matInput">
@@ -15,7 +16,7 @@
         <table>
             <tr class="tableheadwrapper">
                 <th>
-                    <mat-checkbox class="example-margin"></mat-checkbox>
+                    <mat-checkbox #maincheck  class="example-margin"></mat-checkbox>
                 </th>
                 <th>#</th>
                 <th>IMD Code</th>
@@ -65,8 +66,9 @@
             </tr>
             <tr class="tableheadwrapper" *ngFor="let mapdata of mapdatas; index as i">
                 <td>
-                    <mat-checkbox class="example-margin"></mat-checkbox>
+                    <mat-checkbox #check (click)="change(check)" class="example-margin" [checked]="maincheck._checked"></mat-checkbox>
                 </td>
+                
                 <td>{{i+1}}</td>
                 <td>
                     <a [href]="['/mapping/details']">{{mapdata.imdcode}}</a>
