@@ -18,7 +18,8 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgxTabsModule } from '@ngx-tiny/tabs';
 import { TableheaderComponent } from './tableheader/tableheader.component';
-
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [NamecardComponent, ChangeamComponent, TableheaderComponent],
@@ -36,7 +37,10 @@ import { TableheaderComponent } from './tableheader/tableheader.component';
     MatSelectModule,
     MatRadioModule,
     MatPaginatorModule,
+    ReactiveFormsModule,
+    FormsModule,
     MatCheckboxModule,
+    MatAutocompleteModule
   ],
   exports:[NamecardComponent,TableheaderComponent]
 })
