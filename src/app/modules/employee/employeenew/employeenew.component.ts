@@ -3,6 +3,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 import employees from 'src/app/db(faker)/employee';
+import { EmployeeService } from 'src/app/services/employee.service';
 import { BulkuploadComponent } from '../partials/bulkupload/bulkupload.component';
 import { VersionhistoryComponent } from '../partials/versionhistory/versionhistory.component';
 
@@ -16,8 +17,8 @@ export class EmployeenewComponent implements AfterViewInit {
   employees;
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
-  constructor(public dialog: MatDialog) {
-    this.employees=employees
+  constructor(public dialog: MatDialog,public employee:EmployeeService) {
+    this.employees=this.employee.getemployee()
   }
   ngAfterViewInit() {
     

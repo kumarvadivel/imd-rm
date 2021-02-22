@@ -10,6 +10,7 @@ import { ImdmappingpageComponent } from './modules/imdmapping/imdmappingpage/imd
 import { MappingprofileComponent } from './modules/imdmapping/mappingprofile/mappingprofile.component';
 import { RequestshowComponent } from './modules/requests/requestshow/requestshow.component';
 import { RequestspageComponent } from './modules/requests/requestspage/requestspage.component';
+import { SettargetindexpageComponent } from './modules/settarget/settargetindexpage/settargetindexpage.component';
 import { SettargetpageComponent } from './modules/settarget/settargetpage/settargetpage.component';
 import { SettingpageComponent } from './modules/settings/settingpage/settingpage.component';
 
@@ -55,6 +56,10 @@ const routes: Routes = [
   },
   {
     path:"settarget",
+    component:SettargetindexpageComponent,
+  },
+  {
+    path:"settarget/details",
     component:SettargetpageComponent,
   },
   {
