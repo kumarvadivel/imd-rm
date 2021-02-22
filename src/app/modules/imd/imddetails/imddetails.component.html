@@ -2,10 +2,18 @@
     <div class="optionsarea flex-row">
         <ul class="flex-row">
             <li><button mat-raised-button  (click)="openbulkupload()">Bulk Upload</button></li>
-            <li><button mat-raised-button *ngIf="imdcount >=2 || maincheck._checked" (click)="openchangeam()">Change AM</button></li>
-            <li><button mat-raised-button *ngIf="imdcount < 2 && !maincheck._checked" (click)="openchangeam()" disabled>Change AM</button></li>
-            <li><button mat-raised-button *ngIf="imdcount >=2 || maincheck._checked" (click)= "openeditimd()">Edit IMD details</button></li>
-            <li><button mat-raised-button *ngIf="imdcount < 2 && !maincheck._checked" (click)= "openeditimd()" disabled>Edit IMD details</button></li>
+            <li>
+              <button mat-raised-button *ngIf="imdcount >=2 || maincheck._checked; else template1" (click)="openchangeam()">Change AM</button>
+              <ng-template #template1>
+                <button mat-raised-button (click)="openchangeam()" disabled>Change AM</button>
+              </ng-template>
+            </li>
+            <li>
+              <button mat-raised-button *ngIf="imdcount >=2 || maincheck._checked else template2" (click)= "openeditimd()">Edit IMD details</button>
+              <ng-template #template2>
+                <button mat-raised-button *ngIf="imdcount < 2 && !maincheck._checked" (click)= "openeditimd()" disabled>Edit IMD details</button>
+              </ng-template>
+            </li>
             <li><button mat-raised-button >Export to Excel</button></li>
         </ul>
         <mat-form-field appearance="outline" class="matInput">

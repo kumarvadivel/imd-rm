@@ -1,7 +1,7 @@
 const  employees=[
     {
       name:"john doe",
-      ecode:"12345",
+      ecode:12345,
       designation:"Team Lead",
       from:"12-12-21",
       to:"-",

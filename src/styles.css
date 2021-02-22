@@ -51,7 +51,7 @@ th{
 }
 th{
     background: rgb(241 241 241);
-    padding: 1rem 1.5rem ;
+    padding: 0rem 1.5rem ;
     white-space: nowrap;
 }
 td{
@@ -65,6 +65,7 @@ td{
     vertical-align: center;
     white-space: nowrap;
     background: white;
+    text-align: center;
 }
 table{
     width: fill;

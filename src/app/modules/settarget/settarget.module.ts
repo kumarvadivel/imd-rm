@@ -14,11 +14,15 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { TargettableComponent } from './partials/targettable/targettable.component';
 import { SharedModule } from 'src/app/common/shared.module';
 import { MatDialogModule } from '@angular/material/dialog';
+import { SettargetindexpageComponent } from './settargetindexpage/settargetindexpage.component';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { EdittargetpopupComponent } from './partials/edittargetpopup/edittargetpopup.component';
 
 
 
 @NgModule({
-  declarations: [SettargetpageComponent, TargetformComponent, TargethistoryComponent, TargettableComponent],
+  declarations: [SettargetpageComponent,SettargetindexpageComponent, TargetformComponent, TargethistoryComponent, TargettableComponent, EdittargetpopupComponent],
   imports: [
     CommonModule,
     SharedModule,
@@ -30,7 +34,9 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatIconModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatDialogModule
+    MatDialogModule,
+    MatPaginatorModule,
+    MatCheckboxModule
   ]
 })
 export class SettargetModule { }

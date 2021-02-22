@@ -6,6 +6,7 @@ import { BulkuploadComponent } from '../partials/bulkupload/bulkupload.component
 import { EditemployeeformComponent } from '../partials/editemployeeform/editemployeeform.component';
 import { VersionhistoryComponent } from '../partials/versionhistory/versionhistory.component';
 import employees from '../../../db(faker)/employee';
+import { EmployeeService } from 'src/app/services/employee.service';
 @Component({
   selector: 'app-employeedetails',
   templateUrl: './employeedetails.component.html',
@@ -16,8 +17,8 @@ export class EmployeedetailsComponent implements AfterViewInit {
   employees;
   @ViewChild(MatPaginator) paginator: MatPaginator;
 
-  constructor(public dialog: MatDialog) {
-    this.employees=employees
+  constructor(public dialog: MatDialog,public employee:EmployeeService) {
+    this.employees=this.employee.getemployee()
   }
 
   ngAfterViewInit() {

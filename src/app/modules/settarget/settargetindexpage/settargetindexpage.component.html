@@ -1,0 +1,96 @@
+<div class="imdwrapper ngx-tabs">
+  <div class="details">
+    <div class="optionsarea flex-row">
+      <ul class="flex-row">
+          <li><button mat-raised-button  (click)="openbulkupload()">Bulk Upload</button></li>
+          <li>
+              <button mat-raised-button *ngIf="targetcount >=2 || maincheck._checked; else template" (click)= "openedittarget()">Edit Target details</button>
+              <ng-template #template>
+                  <button mat-raised-button  (click)= "openedittarget()" disabled>Edit Target details</button>
+              </ng-template>
+          </li>
+          <li><button mat-raised-button >Export to Excel</button></li>
+      </ul>
+      <mat-form-field appearance="outline" class="matInput">
+          <mat-label>Search By Name or code</mat-label>
+          <input matInput placeholder="Search By Name or code">
+          <mat-icon matSuffix>search</mat-icon>
+      </mat-form-field>
+  </div>
+  <section class="tablearea">
+      <table  class="mat-elevation-z8" >
+        <tr class="tableheadwrapper">
+          <th>
+            <mat-checkbox class="example-margin" #maincheck ></mat-checkbox>
+          </th>
+          <th>#</th>
+          <th>Employee Name</th>
+          <th>Employee Code</th>
+          <th>Role</th>
+          <th>
+              <app-tableheader [title]="'Zone'" [options]="['options1','option2','option3']"></app-tableheader>
+          </th>
+          <th>
+            <app-tableheader [title]="'Location'" [options]="['options1','option2','option3']"></app-tableheader>
+          </th>
+          <th>Location Head</th>
+          <th>
+           <app-tableheader [title]="'Channel'" [options]="['options1','option2','option3']"></app-tableheader>
+          </th>
+          <th>Channel Head Name</th>
+          <th>
+            <app-tableheader [title]="'LOB'" [options]="['options1','option2','option3']"></app-tableheader>
+          </th>
+          <th>
+            <app-tableheader [title]="'Make/Model'" [options]="['options1','option2','option3']"></app-tableheader>
+          </th>
+          <th>RM Name</th>
+          <th>RM Code</th>
+          <th>IMD Name</th>
+          <th>IMD Code</th>
+          <th>NB</th>
+          <th>Rollover</th>
+          <th>Renewal</th>
+          <th>LTP</th>
+          <th>Total Allocated</th>
+          <th>Total Assigned</th>
+        </tr>
+         <tr class="tableheadwrapper" *ngFor="let target of targets; index as i">
+           <td>
+              <mat-checkbox class="example-margin" #check (click)="change(check)" [checked]="maincheck._checked"></mat-checkbox>
+           </td>
+           <td>{{i+1}}</td>
+           <td><a [href]="['/settarget/details']">{{target.empname}}</a></td>
+           <td>{{target.empcode}}</td>
+           <td>{{target.role}}</td>
+           <td>{{target.zone}}</td>
+           <td class="channel">
+            <div class="card flex-row" *ngFor="let location of target.locations"><span>{{location}}</span></div>
+           </td>
+           <td>{{target.locationhead}}</td>
+           <td class="channel">
+              <div class="card flex-row" *ngFor="let channel of target.channel"><span>{{channel}}</span></div>
+           </td>
+           <td>{{target.channelheadname}}</td>
+           <td>{{target.lob}}</td>
+           <td>{{target.model}}</td>
+           <td>{{target.rmname}}</td>
+           <td>{{target.rmcode}}</td>
+           <td>{{target.imdcode}}</td>
+           <td>{{target.imdname}}</td>
+           <td>{{target.nb}}</td>
+           <td>{{target.rollover}}</td>
+           <td>{{target.renewal}}</td>
+           <td>{{target.ltp}}</td>
+           <td>{{target.talloc}}</td>
+           <td>{{target.totass}}</td>
+         </tr>
+      </table>
+  </section>   
+  <mat-paginator [length]="100"
+    [pageSize]="10"
+    [pageSizeOptions]="[5, 10, 25, 100]">
+  </mat-paginator>
+  </div>
+   
+</div>
