@@ -1,12 +1,13 @@
 @import url('https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
 header{
-    height: 12vh;
+    height: 10vh;
     display: flex;
     flex-direction: row;
-    padding: 0 2%;
+    padding: 0 4rem;
     box-shadow: -6px 3px 22px -7px rgba(0,0,0,0.75);
     position: relative;
     align-items: center;
+    z-index: 1;
 }
 .info-bar{
   margin-left: auto;
@@ -18,7 +19,7 @@ header{
     padding: 1rem;
 }
 .info-bar > ul > li {
-    padding: 0 1rem;
+    padding: 0 1.5rem;
 } 
 .personal{
     display: flex;
@@ -30,6 +31,7 @@ header{
 }
 .menu-options > li {
     width: fit-content;
+    cursor: default;
 }
 .menu-options >li > img{
     height: 2rem;
@@ -42,23 +44,28 @@ header{
 
 mat-sidenav{
     width: 300px;
-    position: fixed;
-    
     
 }
 mat-sidenav-container{
     height: 100vh;
     width: 100vw;
+    margin-top: 0rem;
+    z-index: 0;
 }
 mat-sidenav-content{
-    
+    background: white;
+    z-index: -1;
+  
 }
 button{
-    padding: .5rem .5rem;
-    background: white;
+    padding: .5rem;
+   outline-color: #FFAA00;
+    background: #FFAA00;
     border-radius: 3px;
     border:1px solid #FFAA00;
+    font-size: small;
 }
-button:hover{
-    background: #FFAA00;
+.role{
+    color: #777676;
+    font-size: small;
 }

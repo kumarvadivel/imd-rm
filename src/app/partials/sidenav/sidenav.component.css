@@ -1,5 +1,4 @@
 .sidenav{
-    padding: 2rem 0;
 }
 .sidenav,.profile{
    align-items: center;
@@ -7,7 +6,7 @@
 .profile{
     width: 100%;
     padding: 2rem 0;
-    background: blanchedalmond;
+    background: #ffaa007a;
 }
 .profile > img{
     height: 4rem;
@@ -30,8 +29,8 @@
     padding-left: 0;
 }
 .sidenav-options >ul >li{
-    padding: 1.5rem;
-    border: .1rem solid gainsboro;
+    padding: 1rem 3rem;
+    border-bottom: 1px solid gainsboro;
 }
 .sidenav-options >ul >li >span {
     margin-left: 1.5rem;

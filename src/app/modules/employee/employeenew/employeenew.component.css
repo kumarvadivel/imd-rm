@@ -1,6 +1,5 @@
 .employeenewwrapper{
     padding: 1rem;
-    background-color: #fafafa;
     overflow: hidden;
 }
 section{
@@ -12,7 +11,6 @@ table{
 }
 
 .optionsarea{
-    padding: 0 1rem;
     align-items: center;
 }
 .optionsarea > ul >li{
@@ -22,6 +20,7 @@ mat-form-field{
     margin-left: auto;
     order: 3;
     border-radius: 6px;
+    width: 19rem;
 }
 th{
     background: rgb(241 241 241);
@@ -31,7 +30,7 @@ td{
     width: fit-content;
     align-items: center;
     white-space: nowrap;
-    padding: 1.5rem;
+    padding: .5rem;
 }
 td{
     display: table-cell;

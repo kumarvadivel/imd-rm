@@ -3,4 +3,10 @@ mat-form-field{
     order: 3;
     border-radius: 6px;
     margin-top: 1em;
+    max-width: 10rem;
+    width: 10rem;
+}
+input{
+    height: .7rem;
+    width: 3rem;
 }
