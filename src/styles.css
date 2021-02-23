@@ -1,4 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    outline-color: #ffaa00;
+    font-family: muli, sans-serif;
+}
 body{
     box-sizing: border-box;
     margin: 0;
@@ -32,10 +36,10 @@ mat-icon{
     border-bottom: 1px solid lightgrey;
 }
 th{
-    font-weight: normal;
+    font-weight: bold;
 }
 .ngx-tabs{
-    border: 1px solid #e9e9e9;
+    
 }
 .action{
     margin-right:3rem;
@@ -76,4 +80,15 @@ tr{
 mat-expansion-panel-header{
     min-height: 7rem;
     max-height: 7rem ;
+}
+button:disabled,
+button[disabled] {
+   
+}
+
+table > *{
+    font-size: small;
+}
+table > mat-input{
+    width: 10rem;
 }
