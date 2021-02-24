@@ -1,10 +1,10 @@
 section{
-    background: #dcdcdc;
     border-radius: 4px;
-    padding: 2rem;
     min-height: 10rem;
-    box-shadow: -1px 7px 10px -6px rgba(39, 39, 39, 0.603);   
     margin: .5rem 0; 
+}
+header{
+    font-weight: bolder;
 }
 section > form  > input,button{
     align-items: center;
@@ -17,19 +17,21 @@ section>form{
     justify-content: center;
 }
 .formwrapper{
-    margin-top: 2rem;
+    
 }
 input[type=file]{
     background: white;
-    border: 1px solid #FFAA00;
+    height: 3rem;
+    width: 22rem;
+    border: 1px solid lightgray;
 }
 input[type=file]::-webkit-file-upload-button{
-    background-color:#FFAA00;
+    
 
-    border: 1px solid #FFAA00 ;
+    border: 1px solid lightgray ;
     outline:none;
     color: black;
-    height: 2rem;
+    height: 3rem;
 }
 .fileuploader{
     height: 2rem;
@@ -41,4 +43,6 @@ input[type=file]::-webkit-file-upload-button{
 }
 .button-pri{
     border:1px solid #FFAA00 ;
+    width: 22rem;
+    height: 3rem;
 }
