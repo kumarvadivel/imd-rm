@@ -46,22 +46,27 @@ table:first-child >th {
     background-color: lightcoral;
     box-shadow: -1px 7px 10px -6px rgba(39, 39, 39, 0.603);   
 }
-.channel{
-    display: flex;
-    padding: 2em;
-}
-.card{
-    background: lightblue;
-    align-items: center;
-    margin-left: .5rem;
-}
-.his{
-    color: #FFAA00;
-    
-}
 button{
     border:1px solid #FFAA00 ;
 }
 button:hover{
     background: #FFAA00;
+}
+
+.channel{
+    display: flex;
+    padding: 2em 2.5em;
+    min-width: 17rem;
+}
+.card{
+    background: #FFAA00;
+    align-items: center;
+    margin-left: .5rem;
+    padding: .3rem .7rem;
+    border: 0;
+    box-shadow: -6px 3px 9px -7px rgb(0 0 0 / 75%);
+}
+.his{
+    color: #FFAA00;
+    
 }

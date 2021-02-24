@@ -1,6 +1,5 @@
 .employeedetailswrapper{
     padding: 1rem;
-    background: #fafafa;
     overflow: hidden;
 }
 section{
@@ -23,11 +22,10 @@ mat-form-field{
     margin-left: auto;
     order: 3;
     border-radius: 6px;
-    margin-top: 1em;
+    width: 19rem;
 }
 th{
     background: rgb(241 241 241);
-    padding: 1rem 1.5rem ;
     white-space: nowrap;
 }
 td{
@@ -47,12 +45,16 @@ table:first-child >th {
 }
 .channel{
     display: flex;
-    padding: 2em;
+    padding: 2em 2.5em;
+    min-width: 17rem;
 }
 .card{
-    background: lightblue;
+    background: #FFAA00;
     align-items: center;
     margin-left: .5rem;
+    padding: .3rem .7rem;
+    border: 0;
+    box-shadow: -6px 3px 9px -7px rgb(0 0 0 / 75%);
 }
 .his{
     color: #FFAA00;

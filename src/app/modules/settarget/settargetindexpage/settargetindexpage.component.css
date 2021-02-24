@@ -59,7 +59,7 @@ table:first-child >th {
     margin-left: .5rem;
     padding: .3rem .7rem;
     border: 0;
-    box-shadow: -1px 7px 10px -6px rgba(39, 39, 39, 0.603);
+    box-shadow: -6px 3px 9px -7px rgb(0 0 0 / 75%);
 }
 .his{
     color: #FFAA00;

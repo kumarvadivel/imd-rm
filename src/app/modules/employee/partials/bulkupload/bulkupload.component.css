@@ -3,8 +3,11 @@ mat-icon{
     order: 2;
 }
 .bulkupload > div > *{
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 .form > * {
     margin-bottom: 1rem;
+}
+.bulkupload{
+    padding: 2rem;
 }
