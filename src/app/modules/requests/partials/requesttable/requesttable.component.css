@@ -1,3 +1,10 @@
 td > button{
     margin-right: 1em;
 }
+th,td{
+    padding: 1rem;
+    text-align: center;
+}
+table{
+    
+}
