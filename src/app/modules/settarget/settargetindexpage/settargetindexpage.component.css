@@ -1,11 +1,11 @@
 .imdwrapper{
-    padding: 2rem;
-    background: #fafafa;
+    padding: 2rem 5rem;
+    
     overflow: hidden;
 }
 .details{
     padding: 1rem 0;
-    border: 1px solid lightgrey;
+    
 }
 section{
     overflow: scroll;
