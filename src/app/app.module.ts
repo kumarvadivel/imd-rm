@@ -23,6 +23,7 @@ import { ImdmappingModule } from './modules/imdmapping/imdmapping.module';
 import { RequestsModule } from './modules/requests/requests.module';
 import { SettargetModule } from './modules/settarget/settarget.module';
 import { SettingsModule } from './modules/settings/settings.module';
+import { ImglazyDirective } from './directives/imglazy.directive';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { SettingsModule } from './modules/settings/settings.module';
     AppComponent,
     HeaderComponent,
     SidenavComponent,
+    ImglazyDirective,
   ],
   imports: [
     BrowserModule,
